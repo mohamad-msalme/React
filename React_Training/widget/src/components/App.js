@@ -1,12 +1,12 @@
 import React from "react";
-
+import Accordion from "./Accordion";
 
 export default function App(props) {
 
 
     return (
         <div>
-            Initial App
+            <Accordion />
         </div>
     );
 }
