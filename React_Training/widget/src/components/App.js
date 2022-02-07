@@ -1,12 +1,12 @@
 import React from "react";
-import Accordion from "./Accordion";
-import WikipadiaWidget from "./wikipediawidget/WikipadiaWidget";
+// import AccordionWidget from "./accordionwidget/AccordionWidget";
+import WikipadiaWidget from "./wikipediawidget/dashboard/WikipadiaWidget";
 export default function App(props) {
 
 
     return (
         <div>
-            <WikipadiaWidget />
+            <WikipadiaWidget defaultSearchTearm = 'Java Script'/>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 
-export default function Accordion(props) {
+export default function AccordionWidget(props) {
     const parentElement = useRef();
     const activeItemInd = useRef(props.defaultActiveItem);
     /**
@@ -56,7 +56,7 @@ export default function Accordion(props) {
     );
 }
 
-Accordion.defaultProps = {
+AccordionWidget.defaultProps = {
     defaultActiveItem: 0,
     styled: true,
     data: [{

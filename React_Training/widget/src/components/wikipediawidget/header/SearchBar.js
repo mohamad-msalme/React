@@ -7,9 +7,8 @@ export default function SearchBar(props) {
     }
 
     return (
-        <div className="ui segment">
             <form className="ui form" onSubmit={(e) => onFormSubmit(e)}>
-                <div className="ui field">
+                <div className="ui field ">
                     <label>{props.label}</label>
                     <input
                         type={props.type}
@@ -19,7 +18,6 @@ export default function SearchBar(props) {
                     />
                 </div>
             </form>
-        </div>
     )
 }
 // Default props
