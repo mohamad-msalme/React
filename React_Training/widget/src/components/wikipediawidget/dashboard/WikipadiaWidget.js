@@ -16,6 +16,7 @@ export default function WikipadiaWidget(props) {
     useEffect(() => {
         setLoading(true);
         wikipedia.search(props.defaultSearchTearm).then(onSucess, onFaliure);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [])
 
       const onSearchSubmit = () => {
@@ -31,7 +32,8 @@ export default function WikipadiaWidget(props) {
             data.query.search.map((result) => ({
               key: result.pageid,
               title: result.title,
-              content: result.snippet
+              content: result.snippet,
+              pageId: result.pageid,
             }))
           );
 
